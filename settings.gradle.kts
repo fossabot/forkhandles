@@ -20,6 +20,12 @@ include("forkhandles-bom")
 include("bunting4k")
 include("data4k")
 include("fabrikate4k")
+
+"hub4k".apply {
+    includeModule("core")
+    includeSubModule("ksp")
+}
+
 include("mock4k")
 include("parser4k")
 include("partial4k")
