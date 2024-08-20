@@ -33,3 +33,10 @@ fun <T, E> Result<T, E>.failureOrNull(): E? = when (this) {
     is Success<T> -> null
     is Failure<E> -> reason
 }
+
+/**
+ * Convert a `Success` of a nullable value to a `Success` of a non-null value, or calling `block` to abort from
+ * the current function if the value is `null`
+ */
+inline fun <T, E> Result<T?, E>.onNull(block: () -> Nothing): Result<T, E> =
+    flatMap { if (it != null) Success(it) else block() }
