@@ -2,6 +2,7 @@
 
 <a href="https://github.com/fork-handles/forkhandles/actions?query=workflow%3A.github%2Fworkflows%2Fbuild.yaml"><img alt="build" src="https://github.com/fork-handles/forkhandles/workflows/.github/workflows/build.yaml/badge.svg"></a>
 <a href="https://mvnrepository.com/artifact/dev.forkhandles"><img alt="download" src="https://img.shields.io/maven-central/v/dev.forkhandles/forkhandles-bom"></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Ffork-handles%2Fforkhandles?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffork-handles%2Fforkhandles.svg?type=shield"/></a>
 
 
 <a href="http//www.apache.org/licenses/LICENSE-2.0"><img alt="GitHub license" src="https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat"></a>
@@ -28,3 +29,7 @@ In Gradle, install the BOM and then any other modules in the dependency block:
 implementation(platform("dev.forkhandles:forkhandles-bom:X.Y.Z"))
 implementation("dev.forkhandles:$libraryName")
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Ffork-handles%2Fforkhandles.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Ffork-handles%2Fforkhandles?ref=badge_large)
